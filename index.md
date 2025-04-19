@@ -34,3 +34,5 @@ Puedes abrir un issue en uno de mis repos o encontrarme por GitHub.
 
 **Esta página está en construcción.**  
 Actualizaciones regulares con nuevos laboratorios y recursos.
+
+> Actualizado por CrossWicked 😈
