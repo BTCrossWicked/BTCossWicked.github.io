@@ -1,87 +1,83 @@
-/* Estilo general */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Code', monospace;
-    background-color: #0d1117;
-    color: #c9d1d9;
+  margin: 0;
+  padding: 0;
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
 }
 
-/* Menú superior */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #010409;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #30363d;
-    font-size: 1rem;
-}
-
-.navbar a {
-    color: #58a6ff;
-    text-decoration: none;
-    margin: 0 1rem;
-    transition: color 0.2s;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-}
-
-.navbar a:hover {
-    color: #f0f6fc;
+  background-color: #010409;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #30363d;
 }
 
 .logo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #58a6ff;
-    letter-spacing: 1px;
+  color: #f0f6fc;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-/* Contenido */
+.nav-links a {
+  color: #58a6ff;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0f6fc;
+}
+
 .container {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
-h1, h2, h3 {
-    color: #f0f6fc;
-    margin-bottom: 1rem;
+h1 {
+  color: #f0f6fc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 p {
-    line-height: 1.6;
-    margin-bottom: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 ul li {
-    margin-bottom: 0.5rem;
-    padding-left: 1rem;
-    position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.8rem;
 }
 
-ul li::before {
-    content: "\2022";
-    color: #8b949e;
-    position: absolute;
-    left: 0;
-}
-
-/* Colores por categoría */
 .blue-team {
-    color: #58a6ff;
+  color: #58a6ff;
 }
 
 .red-team {
-    color: #f85149;
+  color: #f85149;
 }
 
 .hunting {
-    color: #d29922;
+  color: #d29922;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  color: #8b949e;
+  border-top: 1px solid #30363d;
 }
