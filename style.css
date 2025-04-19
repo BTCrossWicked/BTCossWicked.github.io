@@ -53,6 +53,7 @@ h1 {
   margin: 20px auto;
   max-width: 900px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  height: 260px;
 }
 
 .card-text {
@@ -78,9 +79,10 @@ h1 {
 
 .card-image {
   flex: 1;
-  min-width: 100px;
-  max-width: 200px;
+  min-width: 200px;
+  max-width: 300px;
   overflow: hidden;
+  height: 100%;
 }
 
 .card-image img {
