@@ -1,99 +1,139 @@
-/* Estilos generales */
+/* style.css */
+
+/* ====== GENERAL ====== */
 body {
-  margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-color: #0d1117;
-  color: #c9d1d9;
+    background-color: #0b0e15;
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-  background-color: #010409;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-header h1 {
-  color: #58a6ff;
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
 }
 
-nav a {
-  color: #58a6ff;
-  margin-left: 1rem;
-  text-decoration: none;
-  font-weight: bold;
+/* ====== NAVBAR (RESTAURADO) ====== */
+nav {
+    background-color: #070a10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #1e1e1e;
+    font-family: 'Orbitron', sans-serif;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav .logo {
+    font-size: 1.8em;
+    color: #4fc3f7;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-main {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 2rem;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
-h2 {
-  color: #f0f6fc;
-  border-bottom: 2px solid #58a6ff;
-  padding-bottom: 0.5rem;
-  margin-top: 2rem;
+nav ul li a {
+    text-decoration: none;
+    color: #b0c4de;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-section {
-  margin-bottom: 2rem;
+nav ul li a:hover {
+    color: #4fc3f7;
 }
 
-/* Estilos para los bloques de contenido */
+/* ====== HERO SECTION ====== */
+.hero {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    border-bottom: 2px solid #2196f3;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.hero p {
+    color: #cfd8dc;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* ====== CARDS SECTION ====== */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
 }
 
 .card {
-  display: flex;
-  background-color: #0d1b2a;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+    background-color: #101520;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.03);
+    transform: translateY(-5px);
 }
 
 .card-content {
-  padding: 1rem;
-  flex: 1;
+    padding: 20px;
+    flex: 1;
 }
 
-.card h3 {
-  color: #f0f6fc;
-  margin-top: 0;
+.card h2 {
+    font-size: 1.4em;
+    color: #ffffff;
+    margin: 0 0 10px;
+    line-height: 1.2em;
 }
 
 .card p {
-  font-size: 0.9rem;
-  color: #c9d1d9;
+    font-size: 0.95em;
+    color: #b0bec5;
 }
 
 .card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    background-color: #000;
 }
 
+/* ====== FOOTER ====== */
 footer {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #8b949e;
-  margin: 2rem 0;
-  padding: 1rem;
-  border-top: 1px solid #21262d;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+    color: #607d8b;
+    border-top: 1px solid #1c1c1c;
+    margin-top: 50px;
+}
+
+/* ====== UTILITY CLASSES ====== */
+.text-center {
+    text-align: center;
 }
