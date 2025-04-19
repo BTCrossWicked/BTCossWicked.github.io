@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BTCrossWicked — Cybersecurity Lab</title>
+  <title>BTCrossWicked</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
   <header>
     <div class="logo">BTCrossWicked</div>
     <nav>
@@ -24,7 +24,9 @@
     <section class="intro">
       <h1>BTCrossWicked — Cybersecurity Lab</h1>
       <hr />
-      <p>Bienvenida a mi espacio técnico. Aquí comparto mis investigaciones, scripts y recursos sobre ciberseguridad.</p>
+      <p>
+        Bienvenida a mi espacio técnico. Aquí comparto mis investigaciones, scripts y recursos sobre ciberseguridad.
+      </p>
       <ul>
         <li>🔵 Defensa (Blue Team)</li>
         <li>🔴 Ataque ético (Red Team)</li>
@@ -33,28 +35,36 @@
       </ul>
     </section>
 
-    <section class="cards">
+    <section class="cards-container">
+      <!-- Red Team Card -->
       <div class="card">
         <div class="card-text">
-          <h2>Red Team</h2>
+          <h2>Comandos<br>Linux</h2>
           <p>Todo lo que hay que saber para navegar por consola en Linux y trabajar con su línea de comandos.</p>
           <a href="#">Entrar</a>
         </div>
-        <img src="img/Noe_blue.png" alt="Comandos Linux" />
+        <div class="card-img">
+          <img src="img/Noe_blue.png" alt="Comandos Linux">
+        </div>
       </div>
 
+      <!-- Blue Team Card -->
       <div class="card">
         <div class="card-text">
-          <h2>Blue Team</h2>
+          <h2>Herramientas<br>Kali Linux</h2>
           <p>Repositorio de herramientas de Kali Linux para Pentesting.</p>
+          <a href="#">Entrar</a>
         </div>
-        <img src="img/crosswicked2.png" alt="Blue Team" />
+        <div class="card-img">
+          <img src="img/crosswicked2.png" alt="Herramientas Kali Linux">
+        </div>
       </div>
     </section>
   </main>
+
   <footer>
     <p>© 2025 BTCrossWicked. Conocimiento libre para mentes inquietas.</p>
   </footer>
-</body>
 
+</body>
 </html>
