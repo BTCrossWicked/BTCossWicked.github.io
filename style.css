@@ -1,104 +1,76 @@
-/* Fuente técnica */
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #0d1117;
-  color: #c9d1d9;
-  font-family: 'Share Tech Mono', monospace;
-  line-height: 1.6;
-  padding-bottom: 50px;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0f1a;
+  color: #dce1ea;
 }
 
-/* Navbar */
 .navbar {
-  background-color: #010409;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  border-bottom: 1px solid #30363d;
-  font-family: 'Share Tech Mono', monospace;
+  padding: 1rem 2rem;
+  background-color: #05080f;
+  border-bottom: 1px solid #1d263b;
 }
 
-.logo {
-  color: #f0f6fc;
-  font-size: 1.5rem;
+.nav-title {
   font-weight: bold;
-  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #49b3f5;
 }
 
 .nav-links {
+  list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav-links a {
-  color: #58a6ff;
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 1px;
+  color: #dce1ea;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #f0f6fc;
+  color: #49b3f5;
 }
 
-/* Encabezado principal */
-h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin: 3rem auto 1rem auto;
-  text-align: center;
-  color: #f0f6fc;
-  border-bottom: 2px solid #1f6feb;
-  padding-bottom: 0.5rem;
-  width: fit-content;
-}
-
-/* Texto de bienvenida */
-p {
-  text-align: center;
+.main-container {
+  padding: 2rem;
   max-width: 900px;
-  margin: 0 auto 2rem auto;
-  font-size: 1rem;
-  color: #b1bac4;
-}
-
-/* Lista de categorías */
-ul {
-  list-style: none;
-  max-width: 800px;
   margin: 0 auto;
-  padding: 0;
 }
 
-ul li {
-  display: flex;
-  align-items: center;
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 2px solid #49b3f5;
+  padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.areas {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.areas li {
+  margin: 0.75rem 0;
   font-size: 1rem;
 }
 
-ul li::before {
-  content: '🔹';
-  margin-right: 0.6rem;
-}
-
-/* Footer */
 footer {
   text-align: center;
+  padding: 2rem;
   font-size: 0.85rem;
-  color: #6e7681;
-  margin-top: 4rem;
-  border-top: 1px solid #21262d;
-  padding: 1rem 0;
+  color: #7a849b;
+  border-top: 1px solid #1d263b;
+  margin-top: 3rem;
 }
