@@ -1,83 +1,104 @@
-body {
+/* Fuente técnica */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Share Tech Mono', monospace;
-  background-color: #0d1117;
-  color: #c9d1d9;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Navbar */
 .navbar {
   background-color: #010409;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border-bottom: 1px solid #30363d;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .logo {
   color: #f0f6fc;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
 .nav-links a {
   color: #58a6ff;
-  margin-left: 2rem;
   text-decoration: none;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #f0f6fc;
 }
 
-.container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
+/* Encabezado principal */
 h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 3rem auto 1rem auto;
+  text-align: center;
   color: #f0f6fc;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  border-bottom: 2px solid #1f6feb;
+  padding-bottom: 0.5rem;
+  width: fit-content;
 }
 
+/* Texto de bienvenida */
 p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  font-size: 1rem;
+  color: #b1bac4;
 }
 
+/* Lista de categorías */
 ul {
   list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0;
 }
 
 ul li {
-  padding-left: 1rem;
-  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
-.blue-team {
-  color: #58a6ff;
+ul li::before {
+  content: '🔹';
+  margin-right: 0.6rem;
 }
 
-.red-team {
-  color: #f85149;
-}
-
-.hunting {
-  color: #d29922;
-}
-
-.footer {
+/* Footer */
+footer {
   text-align: center;
-  padding: 2rem;
   font-size: 0.85rem;
-  color: #8b949e;
-  border-top: 1px solid #30363d;
+  color: #6e7681;
+  margin-top: 4rem;
+  border-top: 1px solid #21262d;
+  padding: 1rem 0;
 }
