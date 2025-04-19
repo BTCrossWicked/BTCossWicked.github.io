@@ -1,110 +1,113 @@
-/* --- Diseño base global que te gusta (NO SE TOCA) --- */
+/* Mantener estilo original del encabezado y menú */
 body {
-  background-color: #0b0f1a;
-  font-family: 'Orbitron', sans-serif;
-  color: #cdd9ed;
-  margin: 0;
-  padding: 0;
+    background-color: #0b0f1a;
+    color: #d6e0f5;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  background-color: #0b0f1a;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  border-bottom: 1px solid #1f2739;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    border-bottom: 1px solid #1d2233;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #1da1f2;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #2f91ff;
 }
 
-.navbar a {
-  color: #1da1f2;
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 14px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
 }
 
-/* --- Contenedor del contenido principal --- */
+nav a {
+    text-decoration: none;
+    color: #2f91ff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1f66cc;
+}
+
+/* Contenido principal */
 main {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
 }
 
-h1 {
-  font-size: 28px;
-  color: #e5f2ff;
-  border-bottom: 1px solid #2c3e50;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
+h1, h2 {
+    color: #ffffff;
 }
 
-/* --- Tarjetas horizontales como en el ejemplo de imagen --- */
-.card-row {
-  display: flex;
-  background-color: #0d1325;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 20px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  height: 260px;
+hr {
+    border: none;
+    border-top: 2px solid #2f91ff;
+    margin: 1em 0;
 }
 
-.card-text {
-  flex: 1;
-  padding: 24px;
-  color: #fff;
-  background-color: #112240;
+/* Lista de categorías */
+.category-list {
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
-.card-text h3 {
-  font-size: 22px;
-  margin-bottom: 16px;
-  color: #e5f2ff;
-  line-height: 1.3;
-  text-transform: uppercase;
+.category-list li {
+    margin-bottom: 0.5em;
 }
 
-.card-text p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #cdd9ed;
+/* NUEVA SECCIÓN ESTILO TARJETAS */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.card-image {
-  flex: 1;
-  min-width: 200px;
-  max-width: 300px;
-  overflow: hidden;
-  height: 100%;
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #10182b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.card:hover {
+    transform: scale(1.02);
 }
 
-/* --- Enlaces y botones reutilizables --- */
-a.button {
-  display: inline-block;
-  padding: 10px 16px;
-  background-color: #1da1f2;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 10px;
-  font-size: 14px;
-  transition: background-color 0.2s ease-in-out;
+.card-content {
+    flex: 1;
+    padding: 1.5rem;
 }
 
-a.button:hover {
-  background-color: #0f7dd1;
+.card h3 {
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #d6e0f5;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
