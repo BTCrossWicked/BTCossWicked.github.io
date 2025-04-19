@@ -1,129 +1,99 @@
-/* Estilo general */
+/* Estilos generales */
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background-color: #0b0f17;
-  color: #ffffff;
+  background-color: #0d1117;
+  color: #c9d1d9;
 }
 
-/* Encabezado */
 header {
+  background-color: #010409;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #070b12;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #1d2a3a;
 }
 
-.logo {
-  color: #32aaff;
-  font-size: 1.5rem;
+header h1 {
+  color: #58a6ff;
+  margin: 0;
+}
+
+nav a {
+  color: #58a6ff;
+  margin-left: 1rem;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.nav a {
-  color: #32aaff;
-  margin-left: 1.5rem;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.2s ease-in-out;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.nav a:hover {
-  color: #ffffff;
-}
-
-/* Título principal */
 main {
-  padding: 2rem 3rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
-h1 {
-  font-size: 2rem;
-  color: #ffffff;
-  border-bottom: 2px solid #32aaff;
+h2 {
+  color: #f0f6fc;
+  border-bottom: 2px solid #58a6ff;
   padding-bottom: 0.5rem;
-  display: inline-block;
+  margin-top: 2rem;
 }
 
-/* Grilla de tarjetas */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Estilos para los bloques de contenido */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .card {
-  background-color: #121c2b;
-  border-radius: 10px;
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
+  background-color: #0d1b2a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.03);
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-}
-
 .card-content {
   padding: 1rem;
+  flex: 1;
 }
 
 .card h3 {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin: 0.5rem 0;
-  text-transform: uppercase;
-  line-height: 1.4;
+  color: #f0f6fc;
+  margin-top: 0;
 }
 
 .card p {
   font-size: 0.9rem;
-  color: #ccc;
+  color: #c9d1d9;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 footer {
   text-align: center;
+  font-size: 0.8rem;
+  color: #8b949e;
+  margin: 2rem 0;
   padding: 1rem;
-  font-size: 0.85rem;
-  color: #999;
-  border-top: 1px solid #1d2a3a;
-  margin-top: 4rem;
-} 
-
-/* Íconos por tema */
-li::marker {
-  font-size: 1rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-li.blue::marker {
-  color: #1e90ff;
-}
-
-li.red::marker {
-  color: #ff2d55;
-}
-
-li.orange::marker {
-  color: #ff9f00;
-}
-
-li.green::marker {
-  color: #00ff99;
+  border-top: 1px solid #21262d;
 }
